@@ -101,6 +101,7 @@ Supported resolutions:
 1280x720 
 640x360
 480x270
+
 =================================
 
 I am open for cooperation. If you have any questions or suggestions, write to me. 
