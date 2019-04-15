@@ -1,0 +1,21 @@
+<theme>
+
+	<view name="system">
+		<image name="system_help" extra="true">
+			<path>./../art/help/system_help_1.png</path>
+			<size>0 0.1074</size>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+		</image>
+	</view>
+    <view name="basic, detailed, video">
+    	<image name="gamelist_help" extra="true">
+			<path>./../art/help/gamelist_help_1.png</path>
+			<size>0 0.1074</size>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+			<zIndex>30</zIndex>
+		</image>
+	</view>
+
+</theme>

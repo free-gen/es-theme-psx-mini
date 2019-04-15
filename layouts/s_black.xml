@@ -1,0 +1,22 @@
+<theme>
+
+	<view name="system">
+		<image name="background" extra="true">
+			<path>./../art/system_bg.png</path>
+			<size>0 1</size>
+			<pos>0 0.5</pos>
+			<origin>0 0.5</origin>
+			<zIndex>1</zIndex>        
+		</image>
+	</view>
+    <view name="basic, detailed, video">
+    	<image name="background" extra="true">
+			<path>./../art/menu_bg.png</path>
+			<size>0 1</size>
+			<pos>0 0.5</pos>
+			<origin>0 0.5</origin>
+			<zIndex>10</zIndex>		
+		</image>
+	</view>
+
+</theme>

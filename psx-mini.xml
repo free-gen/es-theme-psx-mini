@@ -1,0 +1,197 @@
+<!--
+theme name:		psx-mini
+version:		1.2
+author:			frgn (free.gen)
+email:          helios.kms@gmail.com
+-->
+
+<theme>
+    <formatVersion>3</formatVersion>
+
+    <include>./setup.xml</include>
+	
+	<view name="system">
+<!--hide standart helpsystem-->
+		<helpsystem name="help">
+			<pos>2 2</pos>
+		</helpsystem>
+<!--gradient layer for carousel-->
+		<image name="cg" extra="true">
+			<path>./art/cg.png</path>
+			<size>1 1</size>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+                        <zIndex>10</zIndex>
+		</image>
+		
+	</view>
+
+<!--carousel-->	
+	<feature supported="carousel">
+
+		<view name="system">
+
+			<carousel name="systemcarousel">
+				<type>horizontal</type>
+				<color>ffffff00</color>
+				<logoScale>1.0</logoScale>
+				<pos>0.0 0.35</pos>
+				<size>1.0 0.45</size>
+				<logoSize>0.1916 0.4259</logoSize>
+				<maxLogoCount>5</maxLogoCount>
+				<zIndex>2</zIndex>
+			</carousel>
+
+			<text name="systemInfo">
+				<backgroundColor>00000000</backgroundColor>
+				<color>ffffff</color>
+				<fontPath>./art/gamelist.ttf</fontPath>
+				<pos>0.3 0.209</pos>
+				<size>0.4 0.05</size>
+				<fontSize>0.0592</fontSize>
+				<zIndex>5</zIndex>
+			</text>
+
+		</view>
+
+	</feature>
+
+    <view name="basic, detailed, video">
+<!--hide standart helpsystem-->
+    	<helpsystem name="help">
+			<pos>2 2</pos>
+		</helpsystem>
+<!--gradient layer for metadata-->
+		<image name="gradient-mask" extra="true">
+			<path>./art/gradient.png</path>
+			<size>0 1</size>
+			<pos>0 0.5</pos>
+			<origin>0 0.5</origin>
+			<zIndex>20</zIndex>
+		</image>
+<!--gamelist base-->
+		<textlist name="gamelist">
+			<selectorColor>ffffff</selectorColor>
+			<selectedColor>CEAD21</selectedColor>
+			<primaryColor>757575</primaryColor>
+			<secondaryColor>0073ef</secondaryColor>
+			<selectorImagePath>./art/selector.png</selectorImagePath>
+			<forceUppercase>0</forceUppercase>
+			<fontPath>./art/gamelist.ttf</fontPath>
+			<alignment>left</alignment>
+			<fontSize>0.0592</fontSize>
+			<scrollSound>./sounds/scroll.wav</scrollSound>
+
+		</textlist>
+
+<!--METADATA BLOCK-->
+
+<!--font setup-->
+        <text name="md_description, md_developer, md_genre, md_releasedate, md_publisher, md_players, md_playcount, players_label" extra="true">
+        	<fontPath>./art/TinyUnicode.ttf</fontPath>
+        	<fontSize>0.0592</fontSize>
+        	<color>ffffff</color>
+        	<forceUppercase>1</forceUppercase>
+        	<alignment>center</alignment>
+        	<zIndex>15</zIndex>
+		</text>
+<!--boxart-->
+		<image name="md_image">
+			<pos>0.1363 0.441</pos>
+			<maxSize>0.222916 0.414814</maxSize>
+			<zIndex>5</zIndex>
+		</image>	
+<!--missing boxart-->
+		<image name="missing_art" extra="true">
+			<path>./art/missing.png</path>
+			<size>1.0 1.0</size>
+			<zIndex>2</zIndex>
+		</image>
+		<video name="md_video">
+			<pos>0.1363 0.441</pos>
+			<maxSize>0.222916 0.414814</maxSize>
+			<zIndex>5</zIndex>			
+		</video>
+<!--bg texture-->
+		<image name="bg_texture" extra="true">
+			<path>./art/texture.png</path>
+			<size>1.0 1.0</size>
+			<zIndex>1</zIndex>
+		</image>
+<!--description-->
+		<text name="md_description">
+			<size>0.227083 0.425925</size>
+			<pos>0.754 0.233</pos>
+			<fontSize>0.045</fontSize>
+			<lineSpacing>0.8</lineSpacing>
+			<color>C0C0C0</color>
+			<forceUppercase>0</forceUppercase>
+		</text>
+<!--dev-->
+		<text name="md_developer">
+			<pos>0.038 0.813</pos>
+            <size>0.1988 0.0059</size>
+		</text>
+<!--genre-->
+		<text name="md_genre">
+			<pos>0.768 0.7005</pos>
+		</text>
+<!--release data-->
+		<datetime name="md_releasedate">
+			<pos>0.1495 0.1565</pos>
+		</datetime>
+<!--publisher-->
+		<text name="md_publisher">
+			<pos>0.038 0.721</pos>
+            <size>0.1988 0.0059</size>
+		</text>
+<!--players-->
+		<text name="players_label" extra="true">
+			<fontPath>./art/gamelist.ttf</fontPath>
+			<text>P</text>
+			<alignment>right</alignment>
+			<size>0.0416 0.0407</size>
+			<pos>0.925 0.7813</pos>
+		</text>
+		<text name="md_players">
+			<fontPath>./art/gamelist.ttf</fontPath>
+            <alignment>left</alignment>
+            <size>0.0416 0.0407</size>
+			<pos>0.934 0.7813</pos>
+		</text>
+<!--rating bar-->	
+		<rating name="md_rating">
+			<filledPath>./art/orb_filled.png</filledPath>
+			<unfilledPath>./art/orb_empty.png</unfilledPath>
+			<size>0.25 0.04444</size>
+			<pos>0.83233 0.16341</pos>
+		</rating>
+<!--played-->	
+		<text name="md_playcount">
+			<pos>0.7095 0.793</pos>
+		</text>
+	</view>
+
+	<view name="video">
+    	<video name="md_video">
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+			<delay>2</delay>			
+		</video>
+		<image name="md_marquee">
+			<pos>2 2</pos>
+		</image>
+		<image name="md_image">
+			<pos>2 2</pos>
+		</image>
+		
+	</view>
+
+<!--SOUND BLOCK-->
+    <sound name="systemscroll">
+			<path>./sounds/scroll.wav</path>
+	</sound>
+	<sound name="launch">
+			<path>./sounds/launch.wav</path>
+	</sound>	
+</theme>
